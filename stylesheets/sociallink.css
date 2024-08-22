@@ -1,0 +1,240 @@
+.social{
+    background-color: red;
+    max-height: 100vh;
+    width: 100%;
+    background-color: black;
+    object-fit: cover;
+    display: flex;
+    align-items:flex-end;
+    position: relative;
+    padding: 5vw;
+    padding-bottom: 8vw;
+}
+.social h2{
+    font-size: 6rem;
+    color: white;
+    font-weight: 500;
+    z-index: 9;
+    line-height: 120px;
+    letter-spacing: -1px;
+    font-family: sans-serif;
+}
+.cir{
+    height: 70vh;
+    max-width: 70vh;
+    position: relative;
+    left: 22%;
+    border-radius: 50%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+.strip1{
+    max-height: 70vh;
+    width: 8vw;
+    /* background-color: aliceblue; */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50vh;
+    z-index: 1;
+}
+.strip2{
+height: 8vw;
+width: 65vh;
+/* background-color: antiquewhite; */
+display: flex;
+justify-content: space-between;
+position: absolute;
+align-items: center;
+z-index: 1;
+}
+#strip2{
+top: 25%;
+}
+#strip3{
+  top: 63%;
+}
+.inercir{
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    z-index:999 ;
+    width: 25vh;
+    font-family: sans-serif;
+    border-radius: 50%;
+    /* background-color: rgb(98, 97, 97); */
+    /* display: none; */
+}
+.inercir h2{
+    font-size: 4.5rem;
+    color: white;
+    font-weight: 500;
+}
+#followpepsi{
+    display: none;
+}
+.social #im1{
+    height: 70px;
+    width: 85px;
+    border-radius: 10px;
+    z-index: 20;
+}
+.social #im2{
+    height: 65px;
+    z-index: 20;
+    width: 85px;
+    border-radius: 10px;
+}
+.social #im3{
+    height: 70px;
+    width: 90px;
+    z-index: 20;
+    border-radius: 15px;
+    object-position: center;
+    object-fit: cover;
+}
+.social #im4{
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    z-index: 20;
+}
+.social #im5{
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    z-index: 20;
+}
+.social #im6{
+    height: 70px;
+    width: 100px;
+    border-radius: 15px;
+    z-index: 20 ;
+}
+.icon{
+    height: 15vh;
+    width: 8vw;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.pages{
+    height: 12vh;
+    width: 6vw;
+    filter: blur(60px);
+    z-index: 10;
+    background-color: rgb(5, 5, 224);
+    position: absolute;
+}
+
+
+/* reponsive */
+
+@media(max-width:1250px){
+    .social .cir{
+        left:20%
+    }
+}
+@media(max-width:1150px){
+    .social .cir{
+        left: 15%;
+    }
+}
+@media(max-width:1050px){
+    .social h2{
+        display: none;
+    }
+    .social .cir{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+     #here{
+    display: none;
+    }
+     #followpepsi{
+    display: initial;
+    }
+}
+@media(max-width:700px){
+    .strip1{
+        gap: 38vh;
+    }
+    .strip2{
+        width: 60vw;
+    }
+    #followpepsi{
+        line-height: 80px;
+    }
+}
+@media(max-width:580px){
+    .social{
+        height: 90vh;
+    }
+    .strip2{
+        width: 70vw;
+    }
+    .strip1{
+        gap: 35vh;
+    }
+}
+@media(max-width:480px){
+    .strip1{
+        gap:28vh;
+    }
+    .strip2{
+        width: 65vw;
+    }
+    #strip2{
+        top: 32%;
+    }
+    #strip3{
+        top: 60%;
+    }
+    .inercir h2{
+        font-size: 3.5rem;
+       position: relative;
+       left: 18%;
+    }
+    .social #im3{
+        height: 55px;
+        width: 70px;
+    }
+    .social #im2{
+        height: 60px;
+    }
+    .social #im1{
+        height: 65px;
+        width: 80px;
+    }
+    .social #im4{
+        height: 70px;
+        width: 70px;
+    }
+    .social #im5{
+        height: 70px;
+        width: 70px;
+    }
+}
+@media(max-width:450px){
+    .social{
+        height: 75vh;
+    }
+    .strip1{
+        gap:25vh;
+    }
+    .inercir h2{
+        font-size: 3rem;
+    }
+ 
+}
+.way{
+    display: inline-block;
+}

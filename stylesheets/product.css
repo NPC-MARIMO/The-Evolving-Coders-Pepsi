@@ -1,0 +1,125 @@
+.comeAlive{
+    height: 30vh;
+    width: 30vh;
+    background-color: red;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color:#fff;
+    top: -12%;
+    left: 7%;
+}
+.comeAlive h2{
+    font-family:syne ;
+    transform: translateY(70%);
+}
+
+#productPage{
+    height: 100vh;
+    padding-top: 25vh;
+    display: flex;
+    background-color: #222;
+    overflow: hidden;
+}
+.canContainer{
+    padding:0 3vw;
+    position: relative;
+    height: 80vh;
+    top: -5%;
+    gap: 5vw;
+    /* background-color: red; */
+    display: flex;
+    align-items: center; 
+}
+.cans{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin:0vw 2vw; 
+    height: 64vh;
+    overflow: hidden;
+    min-width: 160px;
+    text-align: center;
+    /* background-color: red; */
+}
+.cans img{
+    height: 57vh;
+    width: 100%;
+}
+
+#extraPage{
+    height: 350vh;
+    width : 100vw;
+    gap: 1px;
+    display: flex;
+    flex-direction: column;
+}
+.extraSection{
+    height: 33vh;
+    width: 100%;
+}
+.extraSection:nth-child(12){
+    height: 3vh;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.extraPage{
+    height: 180vh;
+    width: 100vw;
+    background-color: blue;
+}
+.cans h3{
+    color: #fff;
+    font-family: "montserrat";
+    padding-top: 1vw;
+    transform: translateY(-10%);
+    font-size: 1.5vw;
+}
+.headingTXT{
+    color: white;
+    position: absolute;
+    text-align: center;
+    top:11%;
+    font-size: 3.7rem;
+    left: 50%;
+    overflow: hidden;
+    width: 55vw;
+    text-transform: capitalize;
+    transform: translateX(-50%);
+    font-family: syne;
+}
+.headingTXT span{
+    display: inline-block;
+}
+.headingTXT span:nth-child(5), .headingTXT span:nth-child(9){
+    padding-left: 1vw;
+}
+.productbasepage{
+height: 100vh;
+width: 100vw;
+background-color: rgb(0, 0, 0);
+}
+
+@media(max-width:1115px){
+    .headingTXT{
+        width: 70vw;
+    }
+
+}
+@media(max-width:870px){
+    .headingTXT{
+        width: 90vw;
+    }
+}
+@media(max-width:700px){
+    .headingTXT span{
+        display: none  ;
+    }
+    #productpage{
+        height: 90vh    ;
+    }
+}

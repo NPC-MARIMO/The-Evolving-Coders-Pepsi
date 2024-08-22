@@ -1,0 +1,136 @@
+.pepsiFans{
+    min-height: 150vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    padding-bottom: 2vw;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.bgfanpage{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.pepsiFans #bgimg{
+    position: absolute;
+    filter : blur(10px);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.pepsiFans h2{
+    color: white;
+    margin-top: 8vw;
+    z-index: 9;  
+    font-size: 5.5rem;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+.pepsiFans .block{
+    min-height: 40vh;
+    /* background-color: red; */
+    width: 100%;
+    z-index: 99; 
+    overflow: hidden;
+    margin-top: 4vw;
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    align-items: center ;
+}
+#block2{
+flex-direction: row-reverse;
+}
+.pepsiFans .block .text{
+    width: 40%;
+    z-index: 9; 
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    color: white;
+}
+.pepsiFans .block img{
+    border-radius: 50px;
+    z-index: 9; 
+   box-shadow: 10px 10px 10px black;
+    height: 35vh;
+}
+.pepsiFans h2.pepsilover span{
+    display: inline-block;
+}
+.pepsiFans h2.pepsilover span:nth-child(2){
+    padding-right: 2vh;
+}.pepsiFans h2.pepsilover span:nth-child(7){
+    padding-right: 2vh;
+}
+
+/* reponsive */
+
+@media(max-width:860px){
+    .pepsiFans h2{
+        font-size: 4.5rem;
+    }
+    .pepsiFans .block{
+        height: 30vh;
+        width: 95%;
+        margin-top: 5vw;
+    }
+    .pepsiFans .block img{
+        height: 80%;
+    }
+
+
+}
+@media(max-width:960px){
+    .pepsiFans .block{
+        width: 95%;
+    }
+    .pepsiFans .block .text{
+        font-size: 1.7rem;
+    }
+}
+@media(max-width:830px){
+    .block img{
+        width: 50vw;
+        height: 40vw;
+    }
+}
+@media(max-width:700px){
+    .pepsiFans .block{
+        height: 45vh;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        margin-top: 15vw;
+    }
+    .pepsiFans .block img{
+        height: 65%;
+    }
+    .pepsiFans .block .text{
+        width: 80%;
+        text-align: center;
+        
+    }
+    #block2{
+        flex-direction: column-reverse;
+    }
+}
+@media(max-width:600px){
+    .pepsiFans h2{
+        font-size: 3.8rem;
+    }
+    .pepsiFans .block .text{
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width:510px){
+    .pepsiFans h2{
+        display: none;
+    }
+    .block img{
+        width: 80vw;
+    }
+}

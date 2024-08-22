@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.main{
+    overflow: hidden;
+}
+.landingpage {
+    position: relative;
+    height: 100vh;
+}
+
+.top {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.192);
+    object-fit: cover;
+    object-position: center;
+    padding: 0 5vw;
+}
+
+.top img {
+    height: 100vh;
+    border: none;
+    width: 100%;
+}
+
+.back {
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* background-color: rgb(0, 0, 0); */
+}
+
+.textarea {
+    height: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+   
+}
+
+nav {
+    height: 13vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 12vh;
+}
+
+nav .elem {
+    display: flex;
+    gap: 3vw;
+    align-items: center;
+}
+
+nav .elem a {
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+}
+
+.hamburger {
+    height: 40px;
+    width: 40px;
+    display: none;
+    /* background-color: red; */
+    padding: 5px 2px;
+}
+.line{
+    width: 100%;
+    height: 3px;
+    margin-bottom: 7px;
+    background-color: white;
+}
+i{
+    height: 100px;
+}
+
+.container {
+    position: relative;
+    align-items: flex-end;
+    top: 45%;
+    transform: translateY(-50%);
+}
+
+.p1text {
+    height: 15vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    /* background-color: red; */
+}
+
+.container h2:nth-child(1) {
+    top: 0;
+}
+
+.container h2 {
+    color: white;
+    font-size: 7rem;
+    font-family: sans-serif;
+    font-weight: 500;
+    top: 100%;
+
+    line-height: 1.1;
+    position: absolute;
+    text-transform: uppercase;
+}
+
+button {
+    padding: 1.5vw 2vw;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-radius: 10px;
+    margin-top: 2vw;
+    border: none;
+    font-weight: 600;
+    color: red;
+    cursor: pointer;
+    background-color: white;
+}
+
+.loadpage {
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+.halfupper,
+.halfbottom {
+    height: 50vh;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+}
+
+.halfbottom {
+    top: 50%;
+}
+
+@media(max-width:900px) {
+    .back .textarea {
+        width: 90%;
+
+    }
+    .loadpage{
+        height: 0;
+        width: 0;
+        display: none;
+    }
+
+    .back .container {
+        top: 55%
+    }
+}
+
+@media(max-width:650px) {
+
+    .back .p1text {
+        height: 11vh;
+    }
+
+    nav .logo img {
+        height: 10vh;
+    }
+
+    .back .container .p1text h2 {
+        font-size: 5rem;
+        line-height: 0.9;
+    }
+
+    nav .elem a {
+        display: none;
+    }
+
+    nav .elem .hamburger {
+        display: initial;
+    }
+    .landingpage{
+        /* background-color: red; */
+        background-image: url(../images/refreshing-soda-ice-cold-liquid-explodes-with-flavor-generated-by-ai_188544-14043.jpg);
+        background-size: cover;
+        background-position: center;
+        pointer-events: all;
+    }
+    .top{
+        display: none;
+    }
+    .back{
+        position: relative;
+        left: auto;
+        top: auto;
+    }
+    
+}
+@media(max-width:390px){
+    .back .container .p1text h2 {
+        font-size: 4rem;       
+    }
+    .back .textarea{
+        width: 95%;
+    }
+    .back button{
+        font-size: 1.7rem;
+    }
+}
